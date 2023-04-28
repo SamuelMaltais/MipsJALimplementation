@@ -8,12 +8,12 @@ entity maindec is -- main control decoder
 			jump: out STD_LOGIC;
 			aluop: out STD_LOGIC_VECTOR (1 downto 0);
 			jal: out STD_LOGIC;
-			index2A: out STD_LOGIC;
+			index2A: out STD_LOGIC
 			);
 end;
 
 architecture behave of maindec is
-	signal controls: STD_LOGIC_VECTOR(8 downto 0);
+	signal controls: STD_LOGIC_VECTOR(10 downto 0);
 begin
 process(op) begin
 	case op is
@@ -23,9 +23,9 @@ process(op) begin
 		when "000100" => controls <= "00010000100"; -- BEQ
 		when "000010" => controls <= "00000010000"; -- J
 		when "001000" => controls <= "10100000000"; -- ADDI
-		when "000011" => controls <= "00100000010"; --JAL
-		when "010001" => controls <= "10"; --Index2Add
-		when others => controls <= "---------"; -- illegal op
+		when "000011" => controls <= "00100000110"; --JAL
+		when "010001" => controls <= "10001000101"; --Index2Add
+		when others => controls <= "-----------"; -- illegal op
 	end case;
 end process;
 	index2A <= controls(10);
