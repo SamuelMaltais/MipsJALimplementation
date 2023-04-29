@@ -18,8 +18,7 @@ architecture struct of proc_mips is
 				regdst, regwrite: out STD_LOGIC;
 				jump: out STD_LOGIC;
 				alucontrol: out STD_LOGIC_VECTOR (2 downto 0);
-				jal: out STD_LOGIC;
-				index2A: out STD_LOGIC
+				jal, index2A: out STD_LOGIC
 				);
 	end component;
 	component datapath

@@ -7,8 +7,7 @@ entity maindec is -- main control decoder
 			regdst, regwrite: out STD_LOGIC;
 			jump: out STD_LOGIC;
 			aluop: out STD_LOGIC_VECTOR (1 downto 0);
-			jal: out STD_LOGIC;
-			index2A: out STD_LOGIC
+			jal, index2A: out STD_LOGIC
 			);
 end;
 

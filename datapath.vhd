@@ -56,9 +56,15 @@ architecture struct of datapath is
 	signal pcjump, pcnext, pcnextbr, pcplus4, pcbranch: STD_LOGIC_VECTOR (31 downto 0);
 	signal signimm, signimmsh: STD_LOGIC_VECTOR (31 downto 0);
 	signal srca, srcb, result: STD_LOGIC_VECTOR (31 downto 0);
-	--New signals
+	--New signals for jal
 	signal srcA3: STD_LOGIC_VECTOR(4 downto 0);
 	signal srcWD3: STD_LOGIC_VECTOR (31 downto 0);
+	--signals for index2A ALU add, write to WD3 
+	signal srcRD1: STD_LOGIC_VECTOR(4 downto 0);
+	signal srcRD2: STD_LOGIC_VECTOR(4 downto 0);
+	signal RD1sll: STD_LOGIC_VECTOR(4 downto 0);
+	signal in2A: STD_LOGIC_VECTOR(4 downto 0);
+
 	
 begin
 -- next PC logic
@@ -72,16 +78,23 @@ begin
 -- register file logic
 
 	--Les donnes qui sont ecrite sur RA sont PC + 4
-	dateWrittenSource: mux2 generic map(32) port map(result, pcplus4, jal, srcWD3);
-	
-	
+	dateWrittenSource: mux2 generic map(32) port map(result, pcplus4, jal, srcWD3);\
 	-- On modifie l'entree pour le Register file selon jal
 	srcA3mux: mux2 generic map (5) port map(writereg, "11111", jal, srcA3);
-	
+
+	--Rd = 4RD1+RD2
+	srcRD12sll: sl2 port map(srcRD1, RD1sll); --4RD1
+	index2Adr: mux2 generic map(32) port map(srcRD1, RD1sll, index2A, in2A);
+	index2ArResult: alu port map(srcRD2, in2A, "010", zero, srcWD3); --result of index2A now on WD3
+	--srcWD3 est pret pour rf
+ 
 	wrmux: mux2 generic map(5) port map(instr(20 downto 16),instr(15 downto 11), regdst, writereg);
 	rf: regfile port map(clk, regwrite, instr(25 downto 21),instr(20 downto 16), srcA3, srcWD3, srca, writedata);
 	resmux: mux2 generic map(32) port map(aluout, readdata, memtoreg, result);
 	se: signext port map(instr(15 downto 0), signimm);
+
+
+
 	
 	
 	
