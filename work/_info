@@ -1,0 +1,701 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+Eadder
+Z0 w1669958816
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 66
+Z5 dC:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais
+Z6 8C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/adder.vhd
+Z7 FC:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/adder.vhd
+l0
+L4 1
+VW:m;:::IB@?=Afe@MaFI72
+!s100 DYiPGOcJ3:cL7?I<1MQJg0
+Z8 OV;C;2020.1;71
+32
+Z9 !s110 1682890730
+!i10b 1
+Z10 !s108 1682890730.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/adder.vhd|
+Z12 !s107 C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/adder.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abehave
+R1
+R2
+R3
+R4
+DEx4 work 5 adder 0 22 W:m;:::IB@?=Afe@MaFI72
+!i122 66
+l10
+L9 4
+V;]1?K^;7`Ja6?=X]CO>2E0
+!s100 n?n0;?00eRg62V@4A]>PI0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ealu
+Z15 w1669919682
+R1
+R2
+Z16 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R3
+R4
+!i122 67
+R5
+Z17 8C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/alu.vhd
+Z18 FC:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/alu.vhd
+l0
+L5 1
+Vc7<32Bf<z>fgWbU3E8LfY1
+!s100 <^If4G@AG6[HaGT>`DN9B3
+R8
+32
+R9
+!i10b 1
+R10
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/alu.vhd|
+Z20 !s107 C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/alu.vhd|
+!i113 1
+R13
+R14
+Abehave
+R1
+R2
+R16
+R3
+R4
+DEx4 work 3 alu 0 22 c7<32Bf<z>fgWbU3E8LfY1
+!i122 67
+l13
+L11 25
+VFTmEo:e`15aBOGV7SFZAT1
+!s100 eT0lN52GYb0K]P8LPWZHS3
+R8
+32
+R9
+!i10b 1
+R10
+R19
+R20
+!i113 1
+R13
+R14
+Ealudec
+Z21 w1682879391
+R3
+R4
+!i122 68
+R5
+Z22 8C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/aludec.vhd
+Z23 FC:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/aludec.vhd
+l0
+L3 1
+Vm0en][O0M;0k=;Pg6XYli1
+!s100 Zm@47?4Y7znRZ^m;4NdIi3
+R8
+32
+R9
+!i10b 1
+R10
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/aludec.vhd|
+Z25 !s107 C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/aludec.vhd|
+!i113 1
+R13
+R14
+Abehave
+R3
+R4
+DEx4 work 6 aludec 0 22 m0en][O0M;0k=;Pg6XYli1
+!i122 68
+l10
+L9 20
+VGXXNi<^ec>gNmb9GYNK_:2
+!s100 3G6^]VT]<1:@iK2@5aSAU2
+R8
+32
+R9
+!i10b 1
+R10
+R24
+R25
+!i113 1
+R13
+R14
+Econtroller
+Z26 w1682876870
+R3
+R4
+!i122 69
+R5
+Z27 8C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/controller.vhd
+Z28 FC:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/controller.vhd
+l0
+L2 1
+VfJ`Tl5Qc@i:CLoDLNfWE<3
+!s100 PV9]n<Z5IliBZM@]PH=4V2
+R8
+32
+R9
+!i10b 1
+R10
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/controller.vhd|
+Z30 !s107 C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/controller.vhd|
+!i113 1
+R13
+R14
+Astruct
+R3
+R4
+DEx4 work 10 controller 0 22 fJ`Tl5Qc@i:CLoDLNfWE<3
+!i122 69
+l33
+L15 23
+Vl_WWA5KooH^f<YW@4zSOY2
+!s100 EQSIQc:2c^k6h7ii5YQGG2
+R8
+32
+R9
+!i10b 1
+R10
+R29
+R30
+!i113 1
+R13
+R14
+Edatapath
+Z31 w1682877909
+R1
+R3
+R4
+!i122 70
+R5
+Z32 8C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/datapath.vhd
+Z33 FC:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/datapath.vhd
+l0
+L4 1
+VzLL9<bc>FZidWH]ScVae@2
+!s100 I;BWOP_jTFjnBL;Yc3C9W1
+R8
+32
+R9
+!i10b 1
+R10
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/datapath.vhd|
+Z35 !s107 C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/datapath.vhd|
+!i113 1
+R13
+R14
+Astruct
+R1
+R3
+R4
+DEx4 work 8 datapath 0 22 zLL9<bc>FZidWH]ScVae@2
+!i122 70
+l67
+L18 81
+V9_>7G`8UdEKmE7AenofU21
+!s100 8Oo5SUMMImk`:AMzjEb2X2
+R8
+32
+R9
+!i10b 1
+R10
+R34
+R35
+!i113 1
+R13
+R14
+Edmem
+Z36 w1669934988
+R1
+R2
+R3
+R4
+!i122 71
+R5
+Z37 8C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/dmem.vhd
+Z38 FC:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/dmem.vhd
+l0
+L5 1
+VThL>TH83I_MLkAW<j[Cc?1
+!s100 aXWHlI?G4GoC2UbGW@EdX3
+R8
+32
+R9
+!i10b 1
+R10
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/dmem.vhd|
+Z40 !s107 C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/dmem.vhd|
+!i113 1
+R13
+R14
+Abehave
+R1
+R2
+R3
+R4
+DEx4 work 4 dmem 0 22 ThL>TH83I_MLkAW<j[Cc?1
+!i122 71
+l12
+L11 14
+VKbB3In_SmYzSzKP3oeElW1
+!s100 @0;OP8gbZmO6i@_Ck?MXW3
+R8
+32
+R9
+!i10b 1
+R10
+R39
+R40
+!i113 1
+R13
+R14
+Eflopr
+Z41 w1384804800
+R1
+R3
+R4
+!i122 72
+R5
+Z42 8C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/flopr.vhd
+Z43 FC:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/flopr.vhd
+l0
+L4 1
+VTMR]]nm4^^4a]MC[PPZ1l1
+!s100 VOSUX_RJM>JQi>3mk1[PS3
+R8
+32
+R9
+!i10b 1
+R10
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/flopr.vhd|
+Z45 !s107 C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/flopr.vhd|
+!i113 1
+R13
+R14
+Aasynchronous
+R1
+R3
+R4
+DEx4 work 5 flopr 0 22 TMR]]nm4^^4a]MC[PPZ1l1
+!i122 72
+l12
+L11 9
+VlbAWDPB_nYD8XXS@ioFDY3
+!s100 34N`PZ[I?zi6SnmA;fLDL1
+R8
+32
+R9
+!i10b 1
+R10
+R44
+R45
+!i113 1
+R13
+R14
+Eimem
+Z46 w1682890719
+R1
+R2
+R3
+R4
+!i122 73
+R5
+Z47 8C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/imem.vhd
+Z48 FC:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/imem.vhd
+l0
+L6 1
+VX260VSRHJh1cA6F[:MdXS3
+!s100 26W^X`CBn`_Zn<]b^[`K^0
+R8
+32
+R9
+!i10b 1
+R10
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/imem.vhd|
+Z50 !s107 C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/imem.vhd|
+!i113 1
+R13
+R14
+Abehave
+R1
+R2
+R3
+R4
+DEx4 work 4 imem 0 22 X260VSRHJh1cA6F[:MdXS3
+!i122 73
+l12
+L11 32
+VTdAV@JJahVhjaV^4BA[F[1
+!s100 PD@CJR^nCcN=T=3U5izd53
+R8
+32
+R9
+!i10b 1
+R10
+R49
+R50
+!i113 1
+R13
+R14
+Emaindec
+R26
+R3
+R4
+!i122 74
+R5
+Z51 8C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/maindec.vhd
+Z52 FC:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/maindec.vhd
+l0
+L3 1
+V[V<UcTS6?nR[GV6B@683c0
+!s100 `bKEkz4DiCS_KBHlUnU;12
+R8
+32
+Z53 !s110 1682890731
+!i10b 1
+R10
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/maindec.vhd|
+Z55 !s107 C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/maindec.vhd|
+!i113 1
+R13
+R14
+Abehave
+R3
+R4
+DEx4 work 7 maindec 0 22 [V<UcTS6?nR[GV6B@683c0
+!i122 74
+l16
+L14 27
+V9_3F9EUN^QR:5>;Tz9O1F3
+!s100 `Yi0zn_G=3<FXfM7HMZac3
+R8
+32
+R53
+!i10b 1
+R10
+R54
+R55
+!i113 1
+R13
+R14
+Emips
+Z56 w1384804842
+R1
+R2
+R3
+R4
+!i122 75
+R5
+Z57 8C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/mips.vhd
+Z58 FC:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/mips.vhd
+l0
+L4 1
+V:InhJ`cfaG`O9Ak]DdP2N1
+!s100 fk`IJok5`IojnGa;URES]1
+R8
+32
+R53
+!i10b 1
+Z59 !s108 1682890731.000000
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/mips.vhd|
+Z61 !s107 C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/mips.vhd|
+!i113 1
+R13
+R14
+Atest
+R1
+R2
+R3
+R4
+DEx4 work 4 mips 0 22 :InhJ`cfaG`O9Ak]DdP2N1
+!i122 75
+l29
+L10 25
+VP1n=E;oMkL?NTcBb@`1OS1
+!s100 CoXdHah5LVHE@CA>;e7<L0
+R8
+32
+R53
+!i10b 1
+R59
+R60
+R61
+!i113 1
+R13
+R14
+Emux2
+Z62 w1384800894
+R3
+R4
+!i122 76
+R5
+Z63 8C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/mux2.vhd
+Z64 FC:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/mux2.vhd
+l0
+L3 1
+Vi@?e?375NKRTMGE_QzfFL3
+!s100 W`1_EWOXA2>al=G63X]0H3
+R8
+32
+R53
+!i10b 1
+R59
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/mux2.vhd|
+Z66 !s107 C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/mux2.vhd|
+!i113 1
+R13
+R14
+Abehave
+R3
+R4
+DEx4 work 4 mux2 0 22 i@?e?375NKRTMGE_QzfFL3
+!i122 76
+l11
+L10 4
+VSXDU]hoZW50d4BeN9=f6g1
+!s100 HaCOl>E;`a_g0CnXmg46G2
+R8
+32
+R53
+!i10b 1
+R59
+R65
+R66
+!i113 1
+R13
+R14
+Eproc_mips
+Z67 w1682887513
+R3
+R4
+!i122 77
+R5
+Z68 8C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/proc_mips.vhd
+Z69 FC:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/proc_mips.vhd
+l0
+L3 1
+Vlc9jA?1f@h<;@EmKP9K840
+!s100 SD6BURLi7oRPSdNAV31Uz2
+R8
+32
+R53
+!i10b 1
+R59
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/proc_mips.vhd|
+Z71 !s107 C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/proc_mips.vhd|
+!i113 1
+R13
+R14
+Astruct
+R3
+R4
+DEx4 work 9 proc_mips 0 22 lc9jA?1f@h<;@EmKP9K840
+!i122 77
+l40
+L12 34
+VAG]QQKZ3eAz1eeoXCEWMY1
+!s100 2L5o=IQ0<2i`:@a`5zL]T1
+R8
+32
+R53
+!i10b 1
+R59
+R70
+R71
+!i113 1
+R13
+R14
+Eregfile
+Z72 w1554062408
+R1
+R2
+R3
+R4
+!i122 78
+R5
+Z73 8C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/regfile.vhd
+Z74 FC:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/regfile.vhd
+l0
+L4 1
+Vc4hIYe3SGbKfLHVn623CU3
+!s100 :fI6jMki]o18Q<n;b:`ZD3
+R8
+32
+R53
+!i10b 1
+R59
+Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/regfile.vhd|
+Z76 !s107 C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/regfile.vhd|
+!i113 1
+R13
+R14
+Abehave
+R1
+R2
+R3
+R4
+DEx4 work 7 regfile 0 22 c4hIYe3SGbKfLHVn623CU3
+!i122 78
+l15
+L12 21
+V2Re^?dUAC=AN43<Ihmn3B0
+!s100 Rk[c=1266=P7kSfIB^z8B1
+R8
+32
+R53
+!i10b 1
+R59
+R75
+R76
+!i113 1
+R13
+R14
+Esignext
+Z77 w1384800702
+R3
+R4
+!i122 79
+R5
+Z78 8C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/signext.vhd
+Z79 FC:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/signext.vhd
+l0
+L3 1
+VQVBj5kWkMDSechO1iMX`h3
+!s100 MXY8H<@X<ljZML9k;5J7@3
+R8
+32
+R53
+!i10b 1
+R59
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/signext.vhd|
+Z81 !s107 C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/signext.vhd|
+!i113 1
+R13
+R14
+Abehave
+R3
+R4
+DEx4 work 7 signext 0 22 QVBj5kWkMDSechO1iMX`h3
+!i122 79
+l9
+L8 4
+VeTbQ5f0l@dhD:h=:?8FP_0
+!s100 [QRG2i1Ea[do@Y2A@:<b:1
+R8
+32
+R53
+!i10b 1
+R59
+R80
+R81
+!i113 1
+R13
+R14
+Esl2
+Z82 w1384800594
+R3
+R4
+!i122 80
+R5
+Z83 8C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/sl2.vhd
+Z84 FC:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/sl2.vhd
+l0
+L3 1
+VRnl<Z[Gf_cX8_U4^i`f[@0
+!s100 4R1FG`ik:5HddiX7_:mMV2
+R8
+32
+R53
+!i10b 1
+R59
+Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/sl2.vhd|
+Z86 !s107 C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/sl2.vhd|
+!i113 1
+R13
+R14
+Abehave
+R3
+R4
+DEx4 work 3 sl2 0 22 Rnl<Z[Gf_cX8_U4^i`f[@0
+!i122 80
+l9
+L8 4
+Vg<>36Tj<`P6hN`f>PRRPd2
+!s100 Gd5PPM1J9i4SXh?@Jf0z43
+R8
+32
+R53
+!i10b 1
+R59
+R85
+R86
+!i113 1
+R13
+R14
+Etestbench
+Z87 w1682888585
+R1
+R2
+R3
+R4
+!i122 81
+R5
+Z88 8C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/testbench.vhd
+Z89 FC:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/testbench.vhd
+l0
+L4 1
+VjR^_Vle;@@1_9>ZeB5zOo3
+!s100 9EH;D0`Ao?0?_^4G62c]]3
+R8
+32
+R53
+!i10b 1
+R59
+Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/testbench.vhd|
+Z91 !s107 C:/Users/leuma/Documents/Ecole/1227/Devoir4_Kelvin_Chen_Samuel_Maltais/testbench.vhd|
+!i113 1
+R13
+R14
+Atest
+R1
+R2
+R3
+R4
+Z92 DEx4 work 9 testbench 0 22 jR^_Vle;@@1_9>ZeB5zOo3
+!i122 81
+l15
+Z93 L7 46
+Z94 V[B0Xia1Y72HXLJT2nJ@MK3
+Z95 !s100 _j;3@XU5kQ]:VfB1[M4CG2
+R8
+32
+R53
+!i10b 1
+R59
+R90
+R91
+!i113 1
+R13
+R14

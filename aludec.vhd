@@ -19,6 +19,7 @@ process (aluop, funct) begin
 				when "100100" => alucontrol <= "000"; -- and
 				when "100101" => alucontrol <= "001"; -- or
 				when "101010" => alucontrol <= "111"; -- slt
+				when "111111" => alucontrol <= "010"; -- add when index2A is 111111
 				when others => alucontrol <= "---";
 			end case;
 		when others => alucontrol <= "---"; --

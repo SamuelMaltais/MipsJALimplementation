@@ -26,6 +26,7 @@ architecture struct of proc_mips is
 				memtoreg, pcsrc: in STD_LOGIC;
 				alusrc, regdst: in STD_LOGIC;
 				regwrite, jump: in STD_LOGIC;
+				jal, index2A: in STD_LOGIC;
 				alucontrol: in STD_LOGIC_VECTOR (2 downto 0);
 				zero: out STD_LOGIC;
 				pc: buffer STD_LOGIC_VECTOR (31 downto 0);
@@ -40,5 +41,5 @@ begin
 	cont: controller port map (instr (31 downto 26), instr(5 downto 0), zero, memtoreg, 
 										memwrite, pcsrc, alusrc, regdst, regwrite, jump, alucontrol, jal, index2A);
 	dp: datapath port map (	clk, reset, memtoreg, pcsrc, alusrc,regdst, regwrite, jump, 
-									alucontrol, zero, pc, instr, aluout, writedata, readdata);
+									jal,index2A,alucontrol, zero, pc, instr, aluout, writedata, readdata);
 end;

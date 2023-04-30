@@ -320,19 +320,20 @@ index2A <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Mips|proc_mips:mips1|controller:cont|aludec:ad
-funct[0] => Mux0.IN5
-funct[1] => Mux1.IN3
-funct[2] => alucontrol.DATAB
-funct[3] => Mux0.IN4
-funct[4] => ~NO_FANOUT~
+funct[0] => Mux2.IN5
+funct[1] => Mux0.IN5
+funct[2] => Mux1.IN5
+funct[3] => Mux2.IN4
+funct[4] => Mux0.IN4
+funct[4] => Mux1.IN4
 funct[5] => ~NO_FANOUT~
-aluop[0] => Mux1.IN5
-aluop[1] => Mux1.IN4
+aluop[0] => Mux3.IN5
+aluop[1] => Mux3.IN4
 aluop[1] => alucontrol.OUTPUTSELECT
 aluop[1] => alucontrol.OUTPUTSELECT
 alucontrol[0] <= alucontrol.DB_MAX_OUTPUT_PORT_TYPE
 alucontrol[1] <= alucontrol.DB_MAX_OUTPUT_PORT_TYPE
-alucontrol[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+alucontrol[2] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Mips|proc_mips:mips1|datapath:dp
