@@ -6,8 +6,8 @@ entity maindec is -- main control decoder
 			branch, alusrc: out STD_LOGIC;
 			regdst, regwrite: out STD_LOGIC;
 			jump: out STD_LOGIC;
-			aluop: out STD_LOGIC_VECTOR (1 downto 0);
-			jal, index2A: out STD_LOGIC
+			jal, index2A: out STD_LOGIC;
+			aluop: out STD_LOGIC_VECTOR (1 downto 0)
 			);
 end;
 
@@ -16,19 +16,19 @@ architecture behave of maindec is
 begin
 process(op) begin
 	case op is
-		when "000000" => controls <= "11000001000"; -- Rtyp
-		when "100011" => controls <= "10100100000"; -- LW
-		when "101011" => controls <= "00101000000"; -- SW
-		when "000100" => controls <= "00010000100"; -- BEQ
-		when "000010" => controls <= "00000010000"; -- J
-		when "001000" => controls <= "10100000000"; -- ADDI
-		when "000011" => controls <= "00100000110"; --JAL
-		when "010001" => controls <= "10001000101"; --Index2Add
+		when "000000" => controls <= "00110000010"; -- Rtyp
+		when "100011" => controls <= "00101001000"; -- LW
+		when "101011" => controls <= "00001010000"; -- SW
+		when "000100" => controls <= "00000100001"; -- BEQ
+		when "000010" => controls <= "00000000100"; -- J
+		when "001000" => controls <= "00101000000"; -- ADDI
+		when "000011" => controls <= "01100000100"; --JAL
+		when "010001" => controls <= "10100010000"; --Index2Add
 		when others => controls <= "-----------"; -- illegal op
 	end case;
 end process;
-	index2A <= controls(10);
 	jal <= controls(9);
+	index2A <= controls(10);
 	regwrite <= controls(8);
 	regdst <= controls(7);
 	alusrc <= controls(6);

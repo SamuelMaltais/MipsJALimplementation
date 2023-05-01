@@ -60,7 +60,7 @@ architecture struct of datapath is
 	signal srcA3: STD_LOGIC_VECTOR(4 downto 0);
 	signal srcWD3: STD_LOGIC_VECTOR (31 downto 0);
 	--signals for index2A ALU add, write to WD3 
-	signal srcaSLL: STD_LOGIC_VECTOR(31 downto 0);
+	signal srcaSLL, srcatimes4: STD_LOGIC_VECTOR(31 downto 0);
 	signal in2A: STD_LOGIC_VECTOR(31 downto 0);
 
 	
@@ -89,8 +89,9 @@ begin
 	se: signext port map(instr(15 downto 0), signimm);
 	
 	--Rd = 4RD1+RD2
-	srcRD12sll: sl2 port map(srca, srcaSLL); --4RD1
-	index2Adr: mux2 generic map(32) port map(srca, srcaSLL, index2A, in2A);
+	srcaSLL <= srca;
+	srcRD12sll: sl2 port map(srcaSLL, srcatimes4); --4RD1
+	index2Adr: mux2 generic map(32) port map(srca, srcatimes4, index2A, in2A);
 
 -- ALU logic
 	srcbmux: mux2 generic map (32) port map(writedata, signimm, alusrc, srcb);

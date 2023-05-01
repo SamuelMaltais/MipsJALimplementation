@@ -15,7 +15,6 @@ begin
 	diff <= a - b;
 	
 	process (a, b, f, diff, tmp) begin
-	report "numbers";
 		case f is
 			when "000" => tmp <= a and b; --
 			when "001" => tmp <= a or b; --

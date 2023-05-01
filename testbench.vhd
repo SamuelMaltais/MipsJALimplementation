@@ -35,16 +35,12 @@ end process;
 process (clk) begin
 	if (clk'event and clk = '0' and memwrite = '1') then
 	  case conv_integer(dataadr) is
-	    when 80 => if(conv_integer(writedata) = 7) then
-			            report "test 1 done";
+	    when 60 => if(conv_integer(writedata) = 5 or conv_integer(writedata) = 20) then
+			            report "Nous avons atteint la bonne ligne avec jal";
 	               else
-							report "test 1: error";
+							report "Puisque v0 != 5, la ligne n'est pas la bonne";
 	               end if;
-	    when 60 => if(conv_integer(writedata) = 7) then
-			            report "test 2 done";
-	               else
-							report "test 2 : error";
-	               end if;
+		
 	    when others => report "";
 	  end case;       
 	end if;
